@@ -1,38 +1,72 @@
-.App {
+#todolist-field {
+  box-shadow: 0 0 20px grey;
+  background: white;
+}
+
+#todolist-field h1 {
   text-align: center;
+  padding: 10px;
+  font-family: 'Arial';
+  font-variant: small-caps;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#todolist-field input {
+  display: inline-block;
+  margin: 15px 5px 10px 25px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 5px 7px grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#todolist-field input:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#todolist-field button {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 20px 0 5px;
+  background: linear-gradient(#a8f2b5, #24d140);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#todolist-field button:hover, #todolist-field button:active {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#task-field {
+  padding-top: 10px;
+}
+
+.Task {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+}
+
+.Task p {
+  margin: 0 5px;
+  padding: 10px;
+  width: 200px;
+  font-weight: 500;
+  font-family: 'Arial';
+  border-radius: 5px;
+  box-shadow: 0 0 3px green;
+  background: white;
+}
+
+.Task button {
+  border-radius: 5px;
+  padding: 0 10px;
+  border: none;
+  background: linear-gradient(#e1a8a8, #ec8080);
+  color: white;
+}
+
+.Task button:focus {
+  outline: none;
 }
